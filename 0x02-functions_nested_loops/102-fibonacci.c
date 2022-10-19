@@ -5,19 +5,23 @@
  */
 int main(void)
 {
-	int c;
-	long int n1, n2, fn
+	init long count, n1, n2, fn;
 
-	n1 = 1;
-	n2 = 2;
-	printf("%ld, %ld", n1, n2);
-	for (c = 0; c < 48; c++)
+	n1 = 0;
+	n2 = 1;
+	for (count = 0; count < 50; count++)
 	{
+
 		fn = n1 + n2;
-		printf(", %ld", fn);
 		n1 = n2;
 		n2 = fn;
+		printf("%lf", fn);
+		if (count == 49)
+			putchar('\n');
+		else
+		{
+			printf(",");
+		}
 	}
-	printf("\n");
 	return (0);
 }
