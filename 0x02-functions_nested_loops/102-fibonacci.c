@@ -15,7 +15,7 @@ int main(void)
 		fn = n1 + n2;
 		n1 = n2;
 		n2 = fn;
-		printf("%lf", fn);
+		printf("%ld", fn);
 		if (count == 49)
 			putchar('\n');
 		else
